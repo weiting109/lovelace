@@ -6,6 +6,7 @@ body, html
 			margin: 0px;
 			font-family: verdana,sans-serif;
       background-color: #000;
+			text-decoration-color: #fff;
 		}
 		main
 		{
@@ -102,3 +103,28 @@ body, html
     padding: 0;
     margin: 0;
   }
+
+/* proposal page */
+
+h5 {
+	color: #fff;
+}
+
+p {
+	color: #fff;
+}
+
+.btn {
+	background-color: #00A550;
+	border-color: #00A550;
+	color: #fff;
+}
+
+.btn:hover {
+	background-color: #186A3B;
+	border-color: #186A3B;	
+}
+
+.card {
+	margin: 10px;
+}
