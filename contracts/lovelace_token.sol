@@ -2,8 +2,6 @@ pragma solidity ^0.4.11;
 
 import 'zeppelin/contracts/token/StandardToken.sol';
 
-//market-driven token
-
 contract LovelaceToken is StandardToken {
 
   string public symbol = "LVL";
