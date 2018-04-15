@@ -1,4 +1,4 @@
-truffle.js:
+
 module.exports = {
     networks: {
         development: {
