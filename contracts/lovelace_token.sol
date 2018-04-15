@@ -1,6 +1,6 @@
 pragma solidity ^0.4.11;
 
-import 'zeppelin-solidity/contracts/token/StandardToken.sol';
+import 'zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
 
 contract LovelaceToken is StandardToken {
 
@@ -11,7 +11,6 @@ contract LovelaceToken is StandardToken {
   uint public INITIAL_SUPPLY = 12000000;
 
   function LovelaceToken() public {
-    totalSupply = 12000000;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
 
