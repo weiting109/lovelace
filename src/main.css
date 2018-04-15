@@ -119,3 +119,12 @@ p {
 	border-color: #00A550;
 	color: #fff;
 }
+
+.btn:hover {
+	background-color: #186A3B;
+	border-color: #186A3B;	
+}
+
+.card {
+	margin: 10px;
+}
