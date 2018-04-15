@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lovelace - User Dashboard</title>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="web3.js\dist\web3.min.js"></script>
+    <link href="bootstrap-4.1.0-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- navbar -->
+		<nav class="navbar">
+      <a href="user.html" class="pull-left">
+          <i class="material-icons">person</i>
+      </a>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="proposal.html">Proposals</a></li>
+				<li><a href="paper.html">Papers</a></li>
+			</ul>
+		</nav>
+		<!-- navbar -->
+
+    <div class="row">
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">My Wallet</h5>
+              <p class="card-text">
+                <b>ADA balance:</b>4.87<br />
+                <small> AdaTokens (ADA) are dollar-pegged. Use ADA to fund your projects! </small>
+                <b>LVL balance:</b>4.87<br />
+                <small> Earn LVL by contributing to the platform. Convert LovelaceTokens (LVL) to ADA to fund your projects! </small>
+              </p>
+              <a href="#" class="btn btn-success">Purchase ADA</a>
+              <a href="#" class="btn btn-success">Withdraw ADA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Updates</h5>
+              <p class="card-text">
+                <h5> Proposals </h5>
+                <h5> Projects </h5>
+                <h5> Published papers </h5>
+              </p>
+              <a href="#" class="btn btn-primary">Invest!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <script>
+    window.addEventListener('load', function() {
+       // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+      if (typeof web3 !== 'undefined') {
+        // Use Mist/MetaMask's provider
+        web3js = new Web3(web3.currentProvider);
+      } else {
+        // Handle the case where the user doesn't have web3. Probably
+        // show them a message telling them to install Metamask in
+        // order to use our app.
+      }
+      // Now you can start your app & access web3js freely:
+      startApp()
+
+      })
+    </script>
+
+  </body>
+</html>
