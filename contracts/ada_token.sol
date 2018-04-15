@@ -2,12 +2,10 @@ pragma solidity ^0.4.11;
 
 import 'zeppelin/contracts/token/StandardToken.sol';
 
-//market-driven token
+contract AdaToken is StandardToken {
 
-contract LovelaceToken is StandardToken {
-
-  string public symbol = "LVL";
-  string public name = "LovelaceToken";
+  string public symbol = "ADA";
+  string public name = "AdaToken";
 
   uint8 public decimals = 18;
   uint public INITIAL_SUPPLY = 12000000;
