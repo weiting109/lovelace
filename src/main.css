@@ -40,6 +40,7 @@ body, html
 				font-weight: bold;
 				position: relative;
 			}
+
 			.navbar > ul li a::before {
     background: #fff none repeat scroll 0 0;
     bottom: -2px;
@@ -50,6 +51,14 @@ body, html
     width: 0%;
     transition: 0.5s;
 }
+
+  .navbar i{
+    color: white;
+    font-size: 50px;
+  }
+  .navbar i:hover {
+    color: grey;
+  }
 	.navbar > ul li a:hover::before
 	{
 		width: 100%;
