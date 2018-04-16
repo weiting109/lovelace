@@ -197,3 +197,16 @@ p {
 .card {
 	margin: 10px;
 }
+
+/* milestones */
+.projects {
+	display: inline-block;
+	width: 100%;
+	padding-top: 50px;
+	padding-left: 200px;
+	background-color: #292929;
+}
+
+#mile {
+	width: 600px;
+}
