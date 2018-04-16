@@ -13,18 +13,28 @@
   </head>
   <body>
     <!-- navbar -->
-		<nav class="navbar">
+    <nav class="navbar">
       <a href="user.html" class="pull-left">
           <i class="material-icons">person</i>
       </a>
 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="proposal.html">Proposals</a></li>
-				<li><a href="paper.html">Papers</a></li>
-			</ul>
-		</nav>
-		<!-- navbar -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proposal.html">Proposals</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Papers</button>
+            <div class="dropdown-content">
+              <a href="paper.html"><h6>My Papers</h6></a>
+              <a href="milestone.html"><h6>Ongoing</h6></a>
+              <a href="paper.html"><h6>All Papers</h6></a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- navbar -->
 
     <div class="container">
       <div class="row" style="height:20vh">
